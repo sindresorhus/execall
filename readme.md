@@ -52,6 +52,11 @@ Regular expression to match against the `input`.
 Type: `string`
 
 
+## Related
+
+- [replace-string](https://github.com/sindresorhus/replace-string) - Replace all substring matches in a string
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
