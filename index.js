@@ -11,7 +11,7 @@ module.exports = (regexp, string) => {
 	while (match = clonedRegexp.exec(string)) {
 		matches.push({
 			match: match[0],
-			sub: match.slice(1),
+			subMatches: match.slice(1),
 			index: match.index
 		});
 

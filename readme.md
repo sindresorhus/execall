@@ -22,12 +22,12 @@ execall(/(\d+)/g, '$200 and $400');
 [
 	{
 		match: '200',
-		sub: ['200'],
+		subMatches: ['200'],
 		index: 1
 	},
 	{
 		match: '400',
-		sub: ['400'],
+		subMatches: ['400'],
 		index: 10
 	}
 ]

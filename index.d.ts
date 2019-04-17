@@ -1,7 +1,7 @@
 declare namespace execall {
 	interface Match {
 		match: string;
-		sub: string[];
+		subMatches: string[];
 		index: number;
 	}
 }
@@ -10,7 +10,7 @@ declare namespace execall {
 Find multiple RegExp matches in a string.
 
 @param regexp - Regular expression to match against the `string`.
-@returns An array of matches.
+@returns The matches.
 
 @example
 ```
@@ -20,12 +20,12 @@ execall(/(\d+)/g, '$200 and $400');
 // [
 // 	{
 // 		match: '200',
-// 		sub: ['200'],
+// 		subMatches: ['200'],
 // 		index: 1
 // 	},
 // 	{
 // 		match: '400',
-// 		sub: ['400'],
+// 		subMatches: ['400'],
 // 		index: 10
 // 	}
 // ]
