@@ -22,7 +22,6 @@
 	"keywords": [
 		"regex",
 		"regexp",
-		"re",
 		"regular",
 		"expression",
 		"exec",
@@ -34,7 +33,6 @@
 		"findall",
 		"immutable",
 		"string",
-		"str",
 		"multiple",
 		"many",
 		"global"

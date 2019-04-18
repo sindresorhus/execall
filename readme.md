@@ -39,7 +39,7 @@ execall(/(\d+)/g, '$200 and $400');
 
 ### execall(regexp, string)
 
-Returns an array of objects with a match, sub-matches, and index.
+Returns an `object[]` with a match, sub-matches, and index.
 
 #### regexp
 
