@@ -1,18 +1,19 @@
 'use strict';
-var cloneRegexp = require('clone-regexp');
+const cloneRegexp = require('clone-regexp');
 
-module.exports = function (input, str) {
-	var match;
-	var matches = [];
-	var re = cloneRegexp(input);
-	var isGlobal = re.global;
+module.exports = (regexp, string) => {
+	let match;
+	const matches = [];
+	const clonedRegexp = cloneRegexp(regexp, {lastIndex: 0});
+	const isGlobal = clonedRegexp.global;
 
-	while (match = re.exec(str)) {
+	// eslint-disable-next-line no-cond-assign
+	while (match = clonedRegexp.exec(string)) {
 		matches.push({
 			match: match[0],
-			sub: match.slice(1),
+			subMatches: match.slice(1),
 			index: match.index
-		})
+		});
 
 		if (!isGlobal) {
 			break;

@@ -8,26 +8,26 @@ Instead of having to iterate over `RegExp#exec`, immutable, and with a nicer res
 ## Install
 
 ```
-$ npm install --save execall
+$ npm install execall
 ```
 
 
 ## Usage
 
 ```js
-var execall = require('execall');
+const execall = require('execall');
 
 execall(/(\d+)/g, '$200 and $400');
 /*
 [
 	{
 		match: '200',
-		sub: ['200'],
+		subMatches: ['200'],
 		index: 1
 	},
 	{
 		match: '400',
-		sub: ['400'],
+		subMatches: ['400'],
 		index: 10
 	}
 ]
@@ -37,17 +37,17 @@ execall(/(\d+)/g, '$200 and $400');
 
 ## API
 
-### execall(re, input)
+### execall(regexp, string)
 
 Returns an array of objects with a match, sub-matches, and index.
 
-#### re
+#### regexp
 
-Type: `regexp`
+Type: `RegExp`
 
-Regular expression to match against the `input`.
+Regular expression to match against the `string`.
 
-#### input
+#### string
 
 Type: `string`
 
@@ -59,4 +59,4 @@ Type: `string`
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
