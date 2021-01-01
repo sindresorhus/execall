@@ -1,4 +1,4 @@
-# execall [![Build Status](https://travis-ci.org/sindresorhus/execall.svg?branch=master)](https://travis-ci.org/sindresorhus/execall)
+# execall
 
 > Find multiple RegExp matches in a string
 
