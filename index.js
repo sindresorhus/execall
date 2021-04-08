@@ -1,7 +1,6 @@
-'use strict';
-const cloneRegexp = require('clone-regexp');
+import cloneRegexp from 'clone-regexp';
 
-module.exports = (regexp, string) => {
+export default function execAll(regexp, string) {
 	let match;
 	const matches = [];
 	const clonedRegexp = cloneRegexp(regexp, {lastIndex: 0});
@@ -21,4 +20,4 @@ module.exports = (regexp, string) => {
 	}
 
 	return matches;
-};
+}

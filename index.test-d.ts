@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import execall = require('.');
+import execAll, {Match} from './index.js';
 
-expectType<execall.Match[]>(execall(/(\d+)/g, '$200 and $400'));
+expectType<Match[]>(execAll(/(\d+)/g, '$200 and $400'));

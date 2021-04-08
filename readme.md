@@ -4,20 +4,18 @@
 
 Instead of having to iterate over `RegExp#exec`, immutable, and with a nicer result format.
 
-
 ## Install
 
 ```
 $ npm install execall
 ```
 
-
 ## Usage
 
 ```js
-const execall = require('execall');
+import execAll from 'execall';
 
-execall(/(\d+)/g, '$200 and $400');
+execAll(/(\d+)/g, '$200 and $400');
 /*
 [
 	{
@@ -34,10 +32,9 @@ execall(/(\d+)/g, '$200 and $400');
 */
 ```
 
-
 ## API
 
-### execall(regexp, string)
+### execAll(regexp, string)
 
 Returns an `object[]` with a match, sub-matches, and index.
 
@@ -51,12 +48,6 @@ Regular expression to match against the `string`.
 
 Type: `string`
 
-
 ## Related
 
 - [replace-string](https://github.com/sindresorhus/replace-string) - Replace all substring matches in a string
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

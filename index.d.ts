@@ -1,9 +1,7 @@
-declare namespace execall {
-	interface Match {
-		match: string;
-		subMatches: string[];
-		index: number;
-	}
+export interface Match {
+	match: string;
+	subMatches: string[];
+	index: number;
 }
 
 /**
@@ -14,9 +12,9 @@ Find multiple RegExp matches in a string.
 
 @example
 ```
-import execall = require('execall');
+import execAll from 'execall';
 
-execall(/(\d+)/g, '$200 and $400');
+execAll(/(\d+)/g, '$200 and $400');
 // [
 // 	{
 // 		match: '200',
@@ -31,6 +29,4 @@ execall(/(\d+)/g, '$200 and $400');
 // ]
 ```
 */
-declare function execall(regexp: RegExp, string: string): execall.Match[];
-
-export = execall;
+export default function execAll(regexp: RegExp, string: string): Match[];
