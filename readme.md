@@ -50,4 +50,5 @@ Type: `string`
 
 ## Related
 
+- [super-regex](https://github.com/sindresorhus/super-regex) - Make a regular expression time out if it takes too long to execute
 - [replace-string](https://github.com/sindresorhus/replace-string) - Replace all substring matches in a string
